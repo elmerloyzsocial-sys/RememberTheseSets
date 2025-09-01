@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remember These Sets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-dumbbell"></i> Remember These Sets</h1>
+        <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="add-form">
+            <h2><i class="fas fa-plus-circle"></i> Add or Edit Exercise</h2>
+            <input type="text" id="title" placeholder="Exercise Name (e.g., Push-up Demo)">
+            <input type="url" id="url" placeholder="URL (YouTube, Social Media, or GIF)">
+            <input type="text" id="category" placeholder="Category (e.g., Upper Body)">
+            <button id="add-button">Add Exercise</button>
+            <button id="cancel-edit" style="display: none;">Cancel Edit</button>
+        </section>
+        <section id="search-filter">
+            <input type="text" id="search" placeholder="Search by exercise or category">
+            <select id="filter-category">
+                <option value="">All Categories</option>
+            </select>
+        </section>
+        <section id="item-list">
+            <h2><i class="fas fa-list"></i> Saved Exercises</h2>
+            <ul></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
