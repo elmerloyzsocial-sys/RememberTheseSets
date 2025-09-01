@@ -1,0 +1,144 @@
+Exercise Link Saver
+Overview
+Exercise Link Saver is a simple, stylish web application designed to help you organize and save links to social media posts, YouTube videos, and GIFs related to exercises. It allows you to categorize your saved items, search or filter through them, edit or delete entries, and toggle between light and dark modes for better usability. The app uses localStorage to persist data in your browser, so no server or database is required.
+This project is built with pure HTML, CSS, and JavaScript, making it lightweight and easy to run locally.
+Features
+
+Add Exercises: Save new exercise links with a title, URL, and category.
+Edit & Delete: Modify or remove saved items.
+Search & Filter: Search by title or category, and filter by specific categories.
+Dark Mode: Toggle between light and dark themes.
+Responsive Design: Mobile-friendly, optimized for portrait mode.
+Gym-Themed Styling: Features gym-related background images, icons, and a fitness-inspired color scheme.
+Media Embedding: Automatically embeds YouTube videos and GIFs for quick previews.
+
+Technologies Used
+
+HTML5: Structure of the web page.
+CSS3: Styling, including responsive design with media queries and dark mode support.
+JavaScript (ES6+): Handles functionality like adding/editing items, searching, filtering, and localStorage persistence.
+External Dependencies:
+
+Font Awesome (via CDN) for icons.
+Google Fonts (Montserrat font).
+Background images from Unsplash.
+
+
+No backend or additional libraries required beyond browser APIs.
+
+Setup and Installation
+Follow these steps to get the project running on your local machine:
+
+Clone or Download the Repository:
+
+If you have Git installed, clone the repository:
+textgit clone <repository-url>
+
+Alternatively, download the ZIP file and extract it.
+
+
+Navigate to the Project Directory:
+
+Open a terminal or command prompt and change to the project folder:
+textcd exercise-link-saver
+
+
+
+Open the Website:
+
+Simply open the index.html file in your preferred web browser (e.g., Chrome, Firefox).
+Right-click index.html and select "Open with" > your browser, or drag the file into the browser window.
+No build tools or servers are needed since this is a static site.
+
+
+Verify Functionality:
+
+The app should load with a gym-themed background.
+Test adding an item: Enter a title, URL (e.g., a YouTube link), and category, then click "Add Exercise".
+Refresh the page to confirm data persists via localStorage.
+
+
+
+Usage Guide
+Here's a step-by-step guide to using the Exercise Link Saver:
+
+Adding a New Exercise:
+
+In the "Add or Edit Exercise" section, fill in:
+
+Exercise Name: A descriptive title (e.g., "Push-up Tutorial").
+URL: A link to a YouTube video, social media post, or GIF (e.g., "https://www.youtube.com/watch?v=IODxDxX7oi4").
+Category: A group like "Upper Body" or "Cardio".
+
+
+Click "Add Exercise". The item will appear in the "Saved Exercises" list with an embedded preview if applicable.
+
+
+Viewing Saved Exercises:
+
+Scroll to the "Saved Exercises" section.
+Each item shows the title, category, media preview (YouTube iframe, GIF image, or link), and action buttons.
+
+
+Editing an Exercise:
+
+Click the "Edit" button on a saved item.
+The form will populate with the item's details.
+Make changes and click "Update Exercise".
+To cancel, click "Cancel".
+
+
+Deleting an Exercise:
+
+Click the "Delete" button on a saved item.
+The item will be removed immediately (no confirmation prompt).
+
+
+Searching and Filtering:
+
+Use the search input to type keywords (matches title or category).
+Select a category from the dropdown to filter results.
+Results update in real-time.
+
+
+Toggling Dark Mode:
+
+Click the moon icon in the header to switch between light and dark themes.
+The preference is saved in localStorage.
+
+
+Mobile Usage:
+
+The app is responsive and works well on mobile devices.
+In portrait mode, elements stack vertically for easier navigation.
+Tap buttons and inputs are touch-friendly.
+
+
+
+Notes
+
+Data Persistence: All data is stored in your browser's localStorage. Clearing browser data or using incognito mode will reset it.
+Supported URLs:
+
+YouTube: Embeds videos automatically.
+GIFs: Displays images if URL ends with .gif.
+Other links: Shows as clickable hyperlinks.
+
+
+Browser Compatibility: Tested on modern browsers (Chrome, Firefox, Safari). May not work perfectly on older versions.
+Customization: Feel free to modify styles.css for different themes or add more features in script.js.
+Limitations: No user authentication or cloud sync—data is local only.
+
+Contributing
+If you'd like to contribute:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes.
+Commit (git commit -am 'Add new feature').
+Push (git push origin feature-branch).
+Open a Pull Request.
+
+License
+This project is open-source and available under the MIT License. See LICENSE for details.
+For any issues or suggestions, please open an issue on the repository.
